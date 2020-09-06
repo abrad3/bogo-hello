@@ -12,11 +12,11 @@ end_pi = 101307
 raw_pie = tasty_gloop[start_pi:end_pi]
 cooked_pie= "".join(tasty for tasty in raw_pie if tasty not in '\n')
 
-pie_triplets=[]
+slices_of_pie=[]
 for wow in mysterious_numbers:
-    pie_triplets.append(int(cooked_pie[wow:wow+3]))
+    slices_of_pie.append(int(cooked_pie[wow:wow+3]))
 
-message=list(map(chr, pie_triplets))
+message=list(map(chr, slices_of_pie))
 
 import random
 def bogo_hello(ls):
